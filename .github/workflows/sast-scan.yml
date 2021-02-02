@@ -39,7 +39,7 @@ jobs:
           # Output directory for the generated reports. Defaults to reports
          # output: "/github/workspace/reports"
           # Project type. Eg: java, python, nodejs. Comma separated values allowed.
-          type: "depscan"
+          type: "depscan,go"
       - name: ls -l
         run: cd reports;ls -l
       - name: Upload report
