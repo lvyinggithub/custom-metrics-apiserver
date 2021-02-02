@@ -40,6 +40,7 @@ jobs:
     - name: ls -l
       run: cd reports;ls -l
     - uses: actions/upload-artifact@v2
+      ##'reports/*.json*'
       with:
         name: reports
-        path: 'reports/*.json*'
+        path: 'license-go.json'
