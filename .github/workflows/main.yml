@@ -30,7 +30,7 @@ jobs:
     - name: dep-scan
       uses: AppThreat/dep-scan-action@master
       env:
-        VULNDB_HOME: ${{ github.workspace }}/db 
+        VULNDB_HOME: ${{ github.workspace }}
         GITHUB_TOKEN: ${{ secrets.GHE_TOKEN }}
 
     - name: cat 
