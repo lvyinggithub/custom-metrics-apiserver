@@ -32,12 +32,7 @@ jobs:
       env:
         VULNDB_HOME: ${{ github.workspace }}/db 
         GITHUB_TOKEN: ${{ secrets.GHE_TOKEN }}
-    - name: upload artifact
-      uses: actions/upload-artifact@v1
-      with:
-        name: reports-depscan
-        path: reports
-      #if: ${{ always() }} 
+
 
     - name: ls -l
       run: ls -l
