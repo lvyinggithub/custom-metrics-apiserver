@@ -43,4 +43,4 @@ jobs:
       ##'reports/*.json*'
       with:
         name: reports
-        path: 'license-go.json'
+        path: 'reports/license-go.json'
