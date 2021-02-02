@@ -33,7 +33,8 @@ jobs:
         VULNDB_HOME: ${{ github.workspace }}/db 
         GITHUB_TOKEN: ${{ secrets.GHE_TOKEN }}
 
-
+    - name: cat 
+      run: cat reports/license-go.json
     - name: ls -l
       run: cd reports;ls -l
 
