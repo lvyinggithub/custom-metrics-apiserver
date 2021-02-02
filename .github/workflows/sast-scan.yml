@@ -34,7 +34,7 @@ jobs:
         # uses: AppThreat/sast-scan-action@4d0f956e6ba3c940a22679fd8fe7cb2e755f3d96
         uses: AppThreat/sast-scan-action@1.0.2
         env:
-          VULNDB_HOME: ${{ github.workspace }}/db 
+          VULNDB_HOME: ${{ github.workspace }}
           GITHUB_TOKEN: ${{ secrets.GHE_TOKEN }}
         with:
           # Source directory to scan. Defaults to workspace
