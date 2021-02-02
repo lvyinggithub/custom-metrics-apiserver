@@ -35,5 +35,5 @@ jobs:
 
 
     - name: ls -l
-      run: ls -l
+      run: cd reports;ls -l
 
