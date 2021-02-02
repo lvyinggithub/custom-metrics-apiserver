@@ -37,4 +37,7 @@ jobs:
       run: cat reports/license-go.json
     - name: ls -l
       run: cd reports;ls -l
-
+    - uses: actions/upload-artifact@v2
+      with:
+        name: reports
+        path: './*.json*'
