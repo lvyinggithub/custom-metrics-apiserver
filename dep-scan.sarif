@@ -23,7 +23,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "license-go.json"
+                  "uri": "reports/license-go.json"
                 },
                 "region": {
                   "startLine": 2,
