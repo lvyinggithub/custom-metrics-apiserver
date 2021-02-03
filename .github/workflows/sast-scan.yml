@@ -47,6 +47,10 @@ jobs:
         
       - name: ls -l
         run: cd reports;ls -l
+      - uses: actions/upload-artifact@v2
+        with:
+          name: reports
+          path: reports
       - name: upload  scan SARIF report
         uses: github/codeql-action/upload-sarif@v1
         with:
