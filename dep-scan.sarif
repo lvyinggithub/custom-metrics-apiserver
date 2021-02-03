@@ -1,0 +1,43 @@
+{
+  "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
+  "version": "2.1.0",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "dep-scan-licens",
+          "rules": [
+            {
+              "id": "R01"
+            }
+          ]
+        }
+      },
+      "results": [
+        {
+          "ruleId": "R01",
+          "message": {
+            "text": "dep-scan-licens"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "license-go.json"
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 7,
+                  "endColumn": 10
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "39fa2ee980eb94b0:1"
+          }
+        }
+      ]
+    }
+  ]
+}
