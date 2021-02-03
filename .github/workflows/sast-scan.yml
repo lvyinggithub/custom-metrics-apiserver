@@ -47,6 +47,12 @@ jobs:
         
       - name: ls -l
         run: cd reports;ls -l
+      - name: cat empty-scan-report.sarif
+        run: cd reports;cat empty-scan-report.sarif
+      - name: cat depscan-report-go.json
+        run: cd reports;cat depscan-report-go.json
+      - name: cat depscan-report-go.html
+        run: cd reports;cat depscan-report-go.html
       - uses: actions/upload-artifact@v2
         with:
           name: reports
