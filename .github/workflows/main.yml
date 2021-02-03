@@ -44,3 +44,7 @@ jobs:
       with:
         name: reports
         path: 'reports/license-go.json'
+    - name: upload  scan SARIF report
+      uses: github/codeql-action/upload-sarif@v1
+      with:
+        sarif_file: ./dep-scan.sarif
